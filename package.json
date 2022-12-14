@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "name": "common-components",
+  "version": "1.0.0",
+  "description": "Test of component library vue2 rollup",
+  "type": "module",
+  "main": "./lib/library.ssr.js",
+  "module": "./lib/library.esm.js",
+  "browser": "./lib/library.js",
+  "unpkg": "./lib/library.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c --environment BUILD:production",
+    "build-bundle": "npm run build && npm pack"
+  },
+  "author": "Alan Santer",
+  "license": "ISC",
+  "peerDependencies": {
+    "vue": "^2.7.14"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^23.0.4",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@vue/compiler-sfc": "^3.2.45",
+    "node-sass": "^8.0.0",
+    "rollup": "^3.7.4",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.56.2",
+    "sass-loader": "^13.2.0",
+    "vue": "^2.7.14",
+    "vue-template-compiler": "^2.7.14"
+  }
+}
