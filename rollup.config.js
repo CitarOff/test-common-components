@@ -1,7 +1,6 @@
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
 import scss from "rollup-plugin-scss";
-import commonjs from "@rollup/plugin-commonjs";
 import vue from "rollup-plugin-vue";
 
 import pkg from "./package.json" assert { type: "json" };
